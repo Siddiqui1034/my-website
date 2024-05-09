@@ -1,0 +1,14 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkcyan;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+
+}
