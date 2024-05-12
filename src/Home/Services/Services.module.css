@@ -1,0 +1,21 @@
+.services{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(222, 197, 245);
+}
+.services>div{
+    height: 350px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 45% 45%;
+    justify-content: space-between;
+    align-content:space-around ;
+}
+.services>div>div{
+border: 1px solid red; 
+border-radius: 10px;
+}

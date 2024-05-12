@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Home.module.css'
 import Image from 'next/image'
 import Card from '@/Card/Card'
+import Services from './Services/Services'
 
 export const Home = () => {
   return (
@@ -29,6 +30,11 @@ export const Home = () => {
       <Card name="Kohli"/>
      </div>
      <div>3</div>
+     </div>
+
+     <div>
+      <h1>Services</h1>
+      <Services />
      </div>
 
     </div> 
