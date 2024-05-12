@@ -1,3 +1,24 @@
 body{
-    margin: 0px;
+    margin: 0px;    
+}
+
+.homeContainerText{
+    position: relative;
+    top: 80px;
+    animation: home-left-text-anim 1s;    
+}
+
+.homeContainerImage{
+    /* position: relative;
+    top: -5px; */
+    /* byDefault value should be given here means final destination*/
+    transform: translate(0px, -5px); 
+    animation: home-right-img-anim 3s;
+}
+.about>span{
+    background-color: green;
+    margin-left: 10px;
+    color: white;
+    border-radius: 5px;
+    animation: hoverwave 1s linear infinite;
 }

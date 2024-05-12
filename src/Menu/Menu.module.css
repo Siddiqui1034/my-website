@@ -1,0 +1,63 @@
+.menuContainer{
+    display: flex; 
+    background-color:rgb(208, 247, 247);  
+    letter-spacing: 2px;
+}
+
+.menuContainer>a{
+    margin-right: 10px;    
+}
+
+.desktopMenu{
+    flex-direction: row;
+    justify-content: end; 
+    padding: auto;
+    height: 40px;
+    align-items: center;
+     /* either above code we can write or below code to make content between verically */
+    /* align-content: center; 
+    flex-wrap: wrap; */
+}
+
+.mobileMenu{
+flex-direction: column;
+justify-content: start;
+width: 100px; 
+position: absolute;
+left: 0px;
+left: -120px;
+transition: left 1s ease;
+} 
+
+.mobileMenu>a{
+    /* width: 100%; */
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.mobilemenuBtn{
+    height: 20px;
+    position: absolute;
+    margin: 4px;
+    right: 0;
+}
+.mobilemenuBtn >span{
+    
+    color: darkcyan;
+    display: block;
+    width: 20px;
+    border: 1px solid;
+    margin: 2px;
+    justify-content: end;
+}
+
+.desktopMenu>a:hover, .mobileMenu>a:hover{
+    color: brown;
+}
+.activeMenu{
+    color: brown; 
+    font-weight: bold;
+    text-shadow: 2px 2px 2px wheat;
+}

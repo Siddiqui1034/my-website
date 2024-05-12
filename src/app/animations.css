@@ -1,0 +1,37 @@
+@keyframes home-left-text-anim {
+    0%{
+        top: -10px; 
+        opacity: 0px;      
+    }
+    100%{
+        top: 80px;
+        opacity: 1px;       
+    }
+}
+/* @keyframes home-right-img-anim {
+    0%{
+        top: 50px;
+    }
+    100%{
+        top: -5px
+    }
+} */
+
+@keyframes home-right-img-anim {
+    0%{
+        transform: translate( 0px, 50px)
+    }
+    100%{
+        transform : translate(0px, -5px)
+    }
+}
+
+@keyframes hoverwave {
+    0%{
+        box-shadow: 0 0 0 0 green rgba(255, 21, 52, 0.5);
+    }
+    100%{
+        box-shadow: 0 0 0 8 rgba(231, 28, 55, 0);
+    }
+    
+}
