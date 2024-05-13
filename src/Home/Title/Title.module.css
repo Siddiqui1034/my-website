@@ -1,0 +1,33 @@
+.titleContainer{
+    display: flex;
+    background-color: aqua;
+    background-image: ;
+    }
+    .titleContainer>div{
+        flex-grow: 1;
+        width: 100%;  
+     
+    }
+    
+    .titleContainer>div:last-child{
+        margin-top: 50px;
+        align-content: center;
+        position: relative;
+        animation: home-left-text-anim 3s;    
+    }
+    
+    
+.titleText>div:first-child{
+    margin-top: 10px;
+    font-size: 2rem;
+    display: block;
+    flex-grow: 1; 
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3); 
+}
+.titleText>div:last-child{
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+

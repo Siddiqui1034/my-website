@@ -1,24 +1,15 @@
 import React from 'react'
 import styles from './Home.module.css'
-import Image from 'next/image'
+
 import Card from '@/Card/Card'
 import Services from './Services/Services'
+import Title from './Title'
 
 export const Home = () => {
   return (
     <div>
-      <h1 className='text-center mt-4 mb-4'>Welcome...</h1>
+      <Title />
       
-      <div className={`px-5 ${styles.homeContainer}`}>
-      
-      <div className={` homeContainerText ${styles.homeText}`}>
-        <div>the Power of</div> 
-        <div>Technology for Your Business</div>
-      </div>
-      <div>
-       <Image className='homeContainerImage' width={300} height={350} alt="" src="https://png.pngtree.com/png-clipart/20220515/original/pngtree-bussines-woman-with-suit-and-laptop-okay-gesture-png-image_7715954.png" />
-      </div>
-      </div> 
 
       {/* 2 div with players */}
      <div className={`${styles.playersDiv} my-5 `}>  
@@ -36,7 +27,7 @@ export const Home = () => {
       <h1>Services</h1>
       <Services />
      </div>
-
+      <div style={{height: "300px", backgroundColor: "yellow"}}></div>
     </div> 
   )
 }
