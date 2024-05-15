@@ -12,7 +12,7 @@ export const Home = () => {
       
 
       {/* 2 div with players */}
-     <div className={`${styles.playersDiv} my-5 `}>  
+     <div className={`mx-4${styles.playersDiv}`}>  
      <div>1</div>
      <div >
       <Card name="Sachin"/>

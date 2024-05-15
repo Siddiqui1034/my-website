@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const Title = () => {
   return (
-    <div>
-      <h1 className='text-center mt-4 mb-4'>Welcome...</h1>
+    <div className={styles.mainContainer}>
+      <h1 className='text-center mb-4'>Welcome...</h1>
       
       <div className={`px-5 ${styles.titleContainer}`}>
       
@@ -14,7 +14,8 @@ const Title = () => {
         <div>Technology for Your Business</div>
       </div>
       <div>
-       <Image className='titleContainerImage' width={300} height={350} alt="" src="https://png.pngtree.com/png-clipart/20220515/original/pngtree-bussines-woman-with-suit-and-laptop-okay-gesture-png-image_7715954.png" />
+       <Image className='titleContainerImage' width={400} height={450} alt="" 
+       src="https://assets-global.website-files.com/6070bb98d3880405574a70fe/64c1737e59e8f72249d34194_brand-circle-image-woman-laptop.png" />
       </div>
       </div> 
     </div>
