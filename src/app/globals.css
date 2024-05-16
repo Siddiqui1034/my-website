@@ -1,8 +1,14 @@
 body{
-    margin: 0px;    
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box; 
+}
+.mainContainers{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.titleContainerText{
+.titleContainerTextAnimation{
     position: relative;
     top: 80px;
     animation: home-left-text-anim 1s;    
@@ -12,8 +18,8 @@ body{
     /* position: relative;
     top: -5px; */
     /* byDefault value should be given here means final destination*/
-    transform: translate(0px, -5px); 
-    animation: home-right-img-anim 3s;
+    transform: translate(0%, -5%); 
+    animation: home-right-img-anim 1s;
 }
 .about>span{
     background-color: green;

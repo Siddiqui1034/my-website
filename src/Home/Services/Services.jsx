@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import styles from './Services.module.css'
 import { checkIsInViewPort } from '@/services/isInViewPort'
+import Card from '@/Card'
 
 const Services = () => {
   const divRef = useRef()
@@ -24,7 +25,7 @@ const Services = () => {
     }
   }, [])
   return (
-    <div className={`mb-5 ${styles.services}`}>
+    <div className={`${styles.services}`}>
       <div ref={divRef} className={ isInViewPort && 'serviceAnimation'}  >
         <div>1</div>
         <div>2</div>

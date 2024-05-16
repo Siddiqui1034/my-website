@@ -4,19 +4,26 @@ import Image from 'next/image'
 
 const Title = () => {
   return (
-    <div className={styles.mainContainer}>
-      <h1 className='text-center mb-4'>Welcome...</h1>
+    <div className={ `mainContainers ${styles.titleBackground}`}>
+      <h1 className='text-center'>Welcome...</h1>
       
-      <div className={`px-5 ${styles.titleContainer}`}>
+      <div className={styles.titleContents}>
       
-      <div className={` titleContainerText ${styles.titleText}`}>
-        <div>the Power of</div> 
-        <div>Technology for Your Business</div>
+      <div className={`titleContainerTextAnimation ${styles.titleText}`}>
+        <div>Hi, It's <span>Nausheen</span></div> 
+        <div>I'm <span>React Developer</span></div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum hic inventore molestias recusandae ab repudiandae pariatur porro, neque corporis fuga magnam provident, repellat asperiores debitis.</div>
+        <div className='my-5 text-center'>
+          <button className='btn btn-dark'>Resume</button>
+          <button className='btn btn-dark'>Contact</button>
+        </div>
       </div>
-      <div>
-       <Image className='titleContainerImage' width={400} height={450} alt="" 
+      
+      <div className={styles.titleImage}>
+       <Image className='titleContainerImage' width={450} height={500} alt="" 
        src="https://assets-global.website-files.com/6070bb98d3880405574a70fe/64c1737e59e8f72249d34194_brand-circle-image-woman-laptop.png" />
       </div>
+
       </div> 
     </div>
   )

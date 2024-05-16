@@ -64,8 +64,7 @@ const Menu = () => {
               className={activeMenuItem === id ? styles.activeMenu : null} 
               onClick={() => displayMenu(id)} 
               href={path} 
-              key={`mi_${ind}`}>
- 
+              key={`mi_${ind}`}> 
             {item}
           </Link>
           // without refreshing page loads which is problem in anchor

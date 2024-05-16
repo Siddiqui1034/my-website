@@ -1,18 +1,25 @@
 .menuContainer{
     display: flex; 
-    background-color:rgb(208, 247, 247);  
+    /* background-color:rgb(208, 247, 247);   */
     letter-spacing: 2px;
+    flex: end;
+    padding-right: 25px;
 }
 
 .menuContainer>a{
-    margin-right: 10px;    
+    margin: 8px 15px ; 
+    text-decoration: none; 
+    color: darkcyan;  
+}
+.menuContainer>a:hover{
+    background-color: white;    
 }
 
 .desktopMenu{
     flex-direction: row;
     justify-content: end; 
     padding: auto;
-    height: 40px;
+    font-size: 20px;
     align-items: center;
      /* either above code we can write or below code to make content between verically */
     /* align-content: center; 
@@ -43,7 +50,7 @@ transition: left 1s ease;
     margin: 4px;
     right: 0;
 }
-.mobilemenuBtn >span{
+.mobilemenuBtn>span{
     
     color: darkcyan;
     display: block;
@@ -54,10 +61,16 @@ transition: left 1s ease;
 }
 
 .desktopMenu>a:hover, .mobileMenu>a:hover{
-    color: brown;
+    color:white;
+    background-color: darkcyan;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 8px;
+    text-shadow: 2px 2px 2px rgb(124, 124, 116);
 }
 .activeMenu{
-    color: brown; 
+    color: darkcyan; 
     font-weight: bold;
-    text-shadow: 2px 2px 2px wheat;
+    text-shadow: 2px 2px 2px rgb(124, 124, 116);
 }
