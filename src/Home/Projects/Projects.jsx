@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import styles from './Projects.module.css'
 import Card from '@/Card/Card'
