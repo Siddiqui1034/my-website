@@ -1,0 +1,39 @@
+.skillContainer{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: rgb(0, 0, 0); 
+  
+}
+.skillItems{
+    margin-top: 3rem;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.skillItems>div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 250px;
+    min-height: 250px; 
+    background-color: transparent;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(124, 127, 131, 0.7);
+    border-radius: 50%;
+}
+.skillItems>div:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+   }

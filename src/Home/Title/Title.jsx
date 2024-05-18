@@ -1,31 +1,35 @@
 import React from 'react'
 import styles from './Title.module.css'
-import Image from 'next/image' 
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Title = () => {
   return (
-    <div className={ `mainContainers ${styles.titleBackground}`}>
-      <h1 className='text-center'>Welcome...</h1>
-      
-      <div className={styles.titleContents}>
-      
-      <div className={`titleContainerTextAnimation ${styles.titleText}`}>
-        <div>Hi, It's <span>Nausheen</span></div> 
-        <div>I'm <span>React Developer</span></div>
-        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum hic inventore molestias recusandae ab repudiandae pariatur porro, neque corporis fuga magnam provident, repellat asperiores debitis.</div>
-        <div className='my-5 text-center'>
-          <button className='btn btn-dark'>Resume</button>
-          <button className='btn btn-dark'>Contact</button>
+    
+      <div className={styles.titleContainer}>
+
+        <div className={`titleContainerTextAnimation ${styles.titleText}`}>
+          <h1>Hi, It's <span>Nausheen</span></h1>
+          <h3 className={styles.textanimation}>I'm a <span>Front-End Developer</span></h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum hic inventore molestias recusandae ab repudiandae pariatur porro, neque corporis fuga magnam provident, repellat asperiores debitis.</p>
+         
+          <div className={`my-5 text-center ${styles.btnGroup}`}>
+            <Link href='#' className={styles.btn}>Resume</Link>
+            <Link href='#contact' className={styles.btn}>Contact</Link>
+          </div>
+
         </div>
-      </div>
-      
-      <div className={styles.titleImage}>
-       <Image className='titleContainerImage' width={450} height={500} alt="" 
-       src="https://assets-global.website-files.com/6070bb98d3880405574a70fe/64c1737e59e8f72249d34194_brand-circle-image-woman-laptop.png" />
+
+        <div className={styles.titleImage}>
+          <div >
+          <Image className={`titleContainerImage ${styles.imgDiv}`} width='500' height='500' alt=""
+              src="/images/titleimage.png" />
+          </div>
+          
+        </div>
+
       </div>
 
-      </div> 
-    </div>
   )
 }
 

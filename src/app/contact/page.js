@@ -1,11 +1,5 @@
-import React from 'react'
 
-const page = () => {
-  return (
-    <div>
-      This is contact Page
-    </div>
-  )
-}
 
-export default page
+
+import Contact from "@/Contact";
+export default Contact

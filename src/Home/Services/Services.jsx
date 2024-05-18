@@ -26,13 +26,13 @@ const Services = () => {
   }, [])
   return (
     <div className={`${styles.services}`}>
-      <div ref={divRef} className={ isInViewPort && 'serviceAnimation'}  >
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
+      <div ref={divRef} className={ isInViewPort ? 'serviceAnimation' : null}  >
+        <div>Accenture has undertaken major projects involving cloud migration, AI implementation, and business process optimisation.</div>
+        <div>Accenture has undertaken major projects involving cloud migration, AI implementation, and business process optimisation.</div>
+        <div>Accenture has undertaken major projects involving cloud migration, AI implementation, and business process optimisation.</div>
+        <div>Accenture has undertaken major projects involving cloud migration, AI implementation, and business process optimisation.</div>
+        <div>Accenture has undertaken major projects involving cloud migration, AI implementation, and business process optimisation.</div>
+        <div>Accenture has undertaken major projects involving cloud migration, AI implementation, and business process optimisation.</div>
       </div>
     </div>
   )

@@ -7,7 +7,7 @@ const Footer = () => {
   let currYear = currdate.getFullYear()
   return (
     <div>
-      <footer className={styles.footer}>@copyright {displayDate} {currYear}</footer>
+      <footer className={styles.footer}> &#169; Nausheen Siddiqui | All rights Reserved {currYear}</footer>
     </div>
   )
 }

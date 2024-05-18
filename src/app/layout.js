@@ -5,6 +5,7 @@ import Header from "@/Header";
 import { Footer } from "@/Footer";
 import Menu from "@/Menu";
 import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,8 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <Menu />
+        
         {children}
+
         <Footer />
       </body>
     </html>

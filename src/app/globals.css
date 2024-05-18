@@ -1,24 +1,47 @@
-body{
+*{
     margin: 0;  
     padding: 0;
     box-sizing: border-box; 
+    text-decoration: none; 
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;   
 }
-.mainContainers{
+
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;    
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color); 
+}
+
+/* .mainContainers{
+    height: 80vh;
     margin-left: 10%;
     margin-right: 10%;
-}
+} */
 
 .titleContainerTextAnimation{
     position: relative;
-    top: 80px;
     animation: home-left-text-anim 1s;    
 }
 
 .titleContainerImage{
-    /* position: relative;
-    top: -5px; */
+     position: relative;
+    /*top: -5px; */
     /* byDefault value should be given here means final destination*/
-    transform: translate(0%, -5%); 
+    transform: translate(0%, -10%); 
     animation: home-right-img-anim 1s;
 }
 .about>span{
@@ -30,5 +53,9 @@ body{
 }
 
 .serviceAnimation{
+    /* position: relative;
+    top: 100px;
+    animation: service-div-anim 1s ease; */
+    transform: translate(0px, 0px);
     animation: service-div-anim 1s ease;
 }

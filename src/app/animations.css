@@ -22,7 +22,7 @@
         transform: translate(0%, 50%)
     }
     100%{
-        transform : translate(0%, -5%)
+        transform : translate(0%, -10%)
     }
 }
 
@@ -38,10 +38,12 @@
 
 @keyframes service-div-anim {
     0%{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 80px);
+        opacity: 0;
     }
     100%{
         transform: translate(0px, 0px);
+        opacity: 1;
     }
    
 }
