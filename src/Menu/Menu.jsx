@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const Menu = () => {
-  const [isMobileView, setIsMobileView] = useState(document.body.offsetWidth < 700)
+  const [isMobileView, setIsMobileView] = useState()
   const timeroutId = useRef()
   const [left, setLeft] = useState(0)
   const [activeMenuItem, setActiveMenuItem] = useState(null)
@@ -17,15 +17,14 @@ const Menu = () => {
       
       clearTimeout(timeroutId.current)      
         timeroutId.current = setTimeout(() => {
-          setIsMobileView(document.body.offsetWidth < 700)
-        }, 100)
-      
+          setIsMobileView(window?.innerWidth < 700)
+        }, 100)      
     }
-
     window.addEventListener('resize', fnResize)
     // console.log(pathname)
     console.log(activeMenuItem);
     setActiveMenuItem(pathname?.slice(1) || "home")
+    setIsMobileView(window?.innerWidth<700)
     
   }, [])
 
