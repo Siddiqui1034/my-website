@@ -15,13 +15,11 @@ const Menu = () => {
   useEffect(() => {
     const fnResize = () => {
       
-      clearTimeout(timeroutId.current)
-      if(typeof document !== 'undefined'){
-
+      clearTimeout(timeroutId.current)      
         timeroutId.current = setTimeout(() => {
           setIsMobileView(document.body.offsetWidth < 700)
         }, 100)
-      }
+      
     }
 
     window.addEventListener('resize', fnResize)
