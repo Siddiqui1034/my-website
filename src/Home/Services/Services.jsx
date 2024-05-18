@@ -2,7 +2,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import styles from './Services.module.css'
 import { checkIsInViewPort } from '@/services/isInViewPort'
-import Card from '@/Card'
 
 const Services = () => {
   const divRef = useRef()

@@ -9,7 +9,7 @@ const Title = () => {
       <div className={styles.titleContainer}>
 
         <div className={`titleContainerTextAnimation ${styles.titleText}`}>
-          <h1>Hi, It's <span>Nausheen</span></h1>
+          <h1>Hi, It&apos;s <span>Nausheen</span></h1>
           <h3 className={styles.textanimation}>I'm a <span>Front-End Developer</span></h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum hic inventore molestias recusandae ab repudiandae pariatur porro, neque corporis fuga magnam provident, repellat asperiores debitis.</p>
          
