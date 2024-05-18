@@ -34,15 +34,13 @@ body{
 
 .titleContainerTextAnimation{
     position: relative;
-    animation: home-left-text-anim 1s;    
+    top: 50px;
+    animation: home-left-text-anim 1s ease;    
 }
 
 .titleContainerImage{
-     position: relative;
-    /*top: -5px; */
-    /* byDefault value should be given here means final destination*/
-    transform: translate(0%, -10%); 
-    animation: home-right-img-anim 1s;
+    transform: translate(0px, -20px); 
+    animation: home-right-img-anim 1s ease;
 }
 .about>span{
     background-color: green;

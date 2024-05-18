@@ -17,7 +17,7 @@ const Services = () => {
           // return console.log(checkIsInViewPort(divRef?.current)); // op true and false as expected
           return checkIsInViewPort(divRef?.current)
         })
-      }, 100); 
+      }, 1); 
     }
     window?.addEventListener('scroll', handleScroll)
     return () =>{
