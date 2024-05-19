@@ -1,8 +1,8 @@
 export function checkIsInViewPort(divRef){
 
-    const {top, left, right, bottom} = divRef?.getBoundingClientRect()
+    const {top, left, right, bottom, width, height } = divRef?.getBoundingClientRect()
 
-    if(top>=0 && left>=0 && right<= window.innerWidth && bottom<= window.innerHeight){
+    if((top+height/2)>=0 && (left+width/2)>=0 && (right-width/2)<= window.innerWidth && (bottom-height/2)<= window.innerHeight){
         return true;
     }
     
